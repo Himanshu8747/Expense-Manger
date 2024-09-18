@@ -17,7 +17,7 @@ const Summary: React.FC<SummaryProps> = ({ transactions }) => {
   const balance = totalIncome - totalExpenses;
 
   return (
-    <div className='px-10'>
+    <div className='px-10 mb-10'>
       <div className="mt-8 ">
       <h2 className="text-2xl font-bold mb-4">Summary</h2>
       <div className="grid grid-cols-3 gap-4 bg-gray-100 rounded-lg">
