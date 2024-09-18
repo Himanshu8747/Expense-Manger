@@ -43,7 +43,7 @@ const TransactionList: React.FC<TransactionListProps> = ({
         <div className="overflow-x-auto">
           <table className="min-w-full bg-white">
             <thead>
-              <tr className="bg-gray-200 text-gray-600 uppercase text-lg leading-normal"> {/* Increased font size here */}
+              <tr className="bg-gray-200 text-gray-600 uppercase text-lg leading-normal">
                 <th className="py-3 px-6 text-left">Description</th>
                 <th className="py-3 px-6 text-left">Amount</th>
                 <th className="py-3 px-6 text-left">Date</th>
@@ -51,7 +51,7 @@ const TransactionList: React.FC<TransactionListProps> = ({
                 <th className="py-3 px-6 text-center">Actions</th>
               </tr>
             </thead>
-            <tbody className="text-black text-base font-medium"> {/* Set font color to black and increased font size */}
+            <tbody className="text-black text-base font-medium">
               {transactions.map((transaction) => (
                 <tr key={transaction.id} className="border-b border-gray-200 hover:bg-gray-100">
                   {editingId === transaction.id ? (
